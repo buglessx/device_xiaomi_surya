@@ -1,8 +1,0 @@
-[
-  {
-    "remote":"github",
-    "repository":"buglessx/vendor_xiaomi_surya-1",
-    "target_path":"vendor/xiaomi/surya",
-    "branch":"10"
-  }
-]
