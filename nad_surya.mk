@@ -43,6 +43,9 @@ USE_PIXEL_CHARGING := true
 # Faceunlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
