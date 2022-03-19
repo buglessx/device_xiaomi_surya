@@ -40,6 +40,9 @@ NAD_BUILD_TYPE := OFFICIAL
 # Pixel Charging
 USE_PIXEL_CHARGING := true
 
+# Faceunlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
