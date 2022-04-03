@@ -55,6 +55,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="raven-user 12 SD1A.210817.036 7805805 release-keys"
+    PRIVATE_BUILD_DESC="coral-user 12 SP2A.220305.012 8177914 release-keys"
 
-BUILD_FINGERPRINT := google/raven/raven:12/SD1A.210817.036/7805805:user/release-keys
+BUILD_FINGERPRINT := google/coral/coral:12/SP2A.220305.012/8177914:user/release-keys
