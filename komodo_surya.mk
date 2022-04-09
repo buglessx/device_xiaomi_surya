@@ -18,8 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Nusantara stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+# Inherit some common KomodoOS stuff.
+$(call inherit-product, vendor/komodo/config/common.mk)
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -27,12 +27,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Blur
 TARGET_USES_BLUR := true
 
-# GApps
-TARGET_GAPPS_ARCH := arm64
-USE_GAPPS := true
-
-# Official
-NAD_BUILD_TYPE := OFFICIAL
+# Komodo Bringup
+KOMODO_OFFICIAL := true
+KOMODO_GAPPS_TYPE := gapps
+KOMODO_VARIANT := RELEASE
 
 # Pixel Charging
 USE_PIXEL_CHARGING := true
@@ -46,7 +44,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
-PRODUCT_NAME := nad_surya
+PRODUCT_NAME := komodo_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := M2007J20CG
